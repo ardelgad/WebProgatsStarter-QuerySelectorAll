@@ -1,4 +1,4 @@
-
+/* 
 // Me gustaría conocer el nombre de todas las chicas que forman el equipo de Progats. Muéstrame sus nombres por consola
 
 let nombreChicas = document.querySelectorAll(".members--name"); // [nodo_patricia, nodo_veronica, nodo_edurne]
@@ -32,12 +32,16 @@ allNames.forEach(nombre => {
     console.log(nombre.textContent);
 })
 
+ */
 // Ejercicio 1. Usa querySelector para obtener los precios de todos los servicios de los gatos. Múestralos por consola. Por consola debería mostrarse  0, 10, 50, 30.  Piensa cual es el selector adecuado para seleccionar todos los precios.
-
+let prices = document.querySelectorAll(".price").textContent;
+console.log(prices);
 // Ejercicio 2: Suma todos los valores de los precios y muéstralos por consola.
 
 let totalPrice = 0; // Al final del bucle y de usar correctamente querySelectorAll debería ser 90
+totalPrice =prices
 
 // Ejercicio 3: Tenemos un array que proviene de bases de datos, donde nos informa de los miembros que actualmente estan inactivos. Por ejemplo el siguiente array ["patricia", "veronica"] nos informa que Patricia y Verónica deberían aparecer como inactivas. Para ello, añade a cada una de las trabajadoras inactivas la clase "members__disabled"
 
 let inactiveMembers = ["patricia", "veronica"];
+inactiveMembers.classList.add("members disabled")
