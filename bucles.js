@@ -1,4 +1,4 @@
-console.log("He cargado el fichero bucles.js");
+/* console.log("He cargado el fichero bucles.js");
 
 function añadirGatoFooter() {
     let gatito = document.createElement("img");
@@ -7,9 +7,9 @@ function añadirGatoFooter() {
 
     let footer = document.querySelector(".footer");
     footer.appendChild(gatito);
-}
+} */
 
-// Crear una función que dado un color por parémtro, nos cambia el color del body a dicho color
+/* // Crear una función que dado un color por parémtro, nos cambia el color del body a dicho color
 function cambiarColorBody(color) {
 
     console.log("Quiero cambiar el fondo a: " + color);
@@ -28,9 +28,9 @@ function cambiarColorBody(color) {
 }
 
 //cambiarColorBody("blue"); // cambiar el color a azul
-cambiarColorBody("#223322"); // cambiar el color a rojo
+cambiarColorBody("#223322"); // cambiar el color a rojo */
 
-// CAmbia el texto del Hero Image al valor que le pasamos por parámetro en 'lema'
+/* // Cambia el texto del Hero Image al valor que le pasamos por parámetro en 'lema'
 function cambiarLema(lema) {
 
     // heroText voy a tener un nodo HTML (objeto); ya puedo manipularlo
@@ -43,7 +43,7 @@ function cambiarLema(lema) {
 }
 
 //cambiarLema("Cat lives Matter!");
-cambiarLema("Give Cat not bombs!!!!!!!!!!!!!!!!");
+cambiarLema("Cats are Puurrfect"); */
 
 // https://lenguajejs.com/javascript/dom/crear-elementos-dom/
 
@@ -64,18 +64,19 @@ cambiarLema("Give Cat not bombs!!!!!!!!!!!!!!!!");
  * 
  * @param {string} numeroDeGatos Número de gatos a añadir
  */
-function añadirGatos(numeroDeGatos) {
+
+/* function añadirGatos(numeroDeGatos) {
     for (let i = 0; i < numeroDeGatos; i++) {
         console.log("He entrado en el bucle!");
         añadirGatoFooter();
     }
-}
+} */
 
-// Cómo haríamos un for para ejecutar este código tantas veces como numGatos
+/* // Cómo haríamos un for para ejecutar este código tantas veces como numGatos
 console.log("numGatos: ", numGatos);
 añadirGatos(10) // añade 2 gatos al footer
 //añadirGatos(3) // añade 3 gatos al footer
-
+ */
 /**
  * Añade un borde de 'grosorBorde' píxeles y de color 'colorBorde' al DOM
  * 
@@ -83,7 +84,8 @@ añadirGatos(10) // añade 2 gatos al footer
  * @param {number} grosorBorde Número de píxeles 
  * @param {string} colorBorde El color en hexadecimal, o literalmente un color soportado por CSS 
  */
- function cambiarBordeElemento(elemento, grosorBorde, colorBorde){
+
+/*  function cambiarBordeElemento(elemento, grosorBorde, colorBorde){
    //existe la propiedad style para cambiar el color del borde (entre otras cosa) y el grosor
      // style.borderColor, style.borderWidth 
     // tengo que setear style.borderStyle a "solid" siempre
@@ -91,17 +93,38 @@ añadirGatos(10) // añade 2 gatos al footer
 
    /*  elemento.style.borderColor = colorBorde;
     elemento.style.borderWidth = grosorBorde + "px";
-    elemento.style.borderStyle = "solid"; */
-}
+    elemento.style.borderStyle = "solid";
+} */
 
-let logo = document.querySelector(".header--logo");
+/* let logo = document.querySelector(".header--logo");
 cambiarBordeElemento(logo, 5, "red"); // voy a poner un borde rojo de 5px en el logo
 
 let footer = document.querySelector(".footer");
 cambiarBordeElemento(footer, 10, "green");
 
 let body = document.querySelector("body");
-cambiarBordeElemento(body, 15, "purple");
+cambiarBordeElemento(body, 15, "purple"); */
+
+//la función recibe por parametro el nombre de una voluntária.
+//Oculta la tarjeta de dicha voluntaria.
+
+//1. Recupera del DOM la tarjeta de la chica en cuestion
+//Si el parametro nombre es patricia tengo que recuperar del DOM el nodo "patricia" y despues establecer su propiedad style.display a "none"
+
+function ocultarMiembro(nombre) {
+    if (nombre == "patricia") {
+        document.querySelector(".card__patricia").style.display = "none";
+    }
+    else if (nombre == "veronica") {
+        document.querySelector(".card__veronica").style.display = "none";
+    }
+    else if (nombre == "edurne") {
+        document.querySelector(".card__edurne").style.display = "none";
+    }
+}
+//ocultarMiembro("patricia")
+ocultarMiembro("veronica")
+//ocultarMiembro("edurne")
 
 // Ejercicios Bucle y condicionales
 
