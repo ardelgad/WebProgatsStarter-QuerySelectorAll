@@ -44,4 +44,4 @@ totalPrice =prices
 // Ejercicio 3: Tenemos un array que proviene de bases de datos, donde nos informa de los miembros que actualmente estan inactivos. Por ejemplo el siguiente array ["patricia", "veronica"] nos informa que Patricia y Verónica deberían aparecer como inactivas. Para ello, añade a cada una de las trabajadoras inactivas la clase "members__disabled"
 
 let inactiveMembers = ["patricia", "veronica"];
-inactiveMembers.classList.add("members disabled")
+inactiveMembers.classList.add("members disabled");

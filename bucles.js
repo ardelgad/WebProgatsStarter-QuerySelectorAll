@@ -107,11 +107,11 @@ cambiarBordeElemento(body, 15, "purple"); */
 
 //la función recibe por parametro el nombre de una voluntária.
 //Oculta la tarjeta de dicha voluntaria.
-
-//1. Recupera del DOM la tarjeta de la chica en cuestion
-//Si el parametro nombre es patricia tengo que recuperar del DOM el nodo "patricia" y despues establecer su propiedad style.display a "none"
-
 function ocultarMiembro(nombre) {
+    //1. Recupera del DOM la tarjeta de la chica en cuestion
+    //Si el parametro nombre es patricia tengo que recuperar del DOM el nodo "patricia" y despues establecer su propiedad style.display a "none"
+
+
     if (nombre == "patricia") {
         document.querySelector(".card__patricia").style.display = "none";
     }
