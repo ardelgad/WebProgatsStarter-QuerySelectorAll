@@ -1,5 +1,15 @@
 console.log("He cargado el fichero bucles.js");
 
+//Crear una función que nos permita añadir un gato al footer
+function añadirGatoFooter() {
+    let gatito = document.createElement("img");
+    gatito.style.width = "50px";
+    gatito.src = "./img/logo.webp";
+
+    let footer = document.querySelector(".footer");
+    footer.appendChild(gatito);
+}
+
 // https://lenguajejs.com/javascript/dom/crear-elementos-dom/
 
 // Voy a añadir un <p> al final del body
@@ -11,25 +21,24 @@ console.log("He cargado el fichero bucles.js");
 // header.appendChild(despedida);
 
 // Voy a crear numGatos imagénes; y las voy añadir como hijos del footer
-let gatito = document.createElement("img");
+/* let gatito = document.createElement("img");
 gatito.style.width = "50px";
 gatito.src = "./img/logo.webp";
 
-let footer = document.querySelector(".footer");
+let footer = document.querySelector(".footer"); */
 
 // Cómo haríamos un for para ejecutar este código tantas veces como numGatos
 console.log("numGatos: ", numGatos);
 for (let i = 0; i < numGatos; i++) {
     console.log("He entrado en el bucle!");
 
-    gatito = document.createElement("img");
+    añadirGatoFooter();
+  /*   gatito = document.createElement("img");
     gatito.style.width = "50px";
     gatito.src = "./img/logo.webp";
 
-    footer.appendChild(gatito);
+    footer.appendChild(gatito); */
 }
-
-
 
 // Ejercicios Bucle y condicionales
 
@@ -41,5 +50,3 @@ for (let i = 0; i < numGatos; i++) {
 let patriciaDisponible = true;
 let veronicaDisponible = false;
 let edurneDisponible = true;
-
-
