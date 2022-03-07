@@ -121,7 +121,17 @@ function ocultarMiembro(nombre) {
     else if (nombre == "edurne") {
         document.querySelector(".card__edurne").style.display = "none";
     }
+    else {
+        console.log("Este miembro no existe");
+    }
 }
+/* Otras formas de resolver
+document.querySelector(".card__" + nombre).style.display = "none";
+------------------------------------------------------------------
+let tarjetaChica = document.querySelector(".card__" + nombre);
+console.log("nodo seleccionado de la chica: ", tarjetaChica);
+tarjetaChica.style.display = "none"; */
+
 //ocultarMiembro("patricia")
 ocultarMiembro("veronica")
 //ocultarMiembro("edurne")
